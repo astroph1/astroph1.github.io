@@ -16,11 +16,10 @@
 <body>
     <script>
         //beginning of JavaScript
+        var hashtag = ""
         for (let i = 0; i < 7; i++) { // outer iterative loop to print 6 lines of hashtages
-            for (let j = 1; j <= i + 1; j++) { // inner iterative loop to print hashtags equal to the line number
-                console.log("#") // Printing the hashtags
-            }
-            console.log("\n") // Creating breaks between the hastags
+            hashtag += "#" // adding one hashtag to the string
+            console.log(hashtag) // printing the updated hashtag
         }
     </script>
     <!--end of JavaScript-->
