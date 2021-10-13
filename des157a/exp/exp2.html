@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2 - DES 157A 001</title>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <h2>To enter the console, press the button below, and you can view the color you inspected in the console log in words!</h2>
+    <button id="boton" onclick="newAttempt">Inspect Element</button>
+    <script>
+        var color = prompt("Enter the hex-code for the page!","");
+        var hexColor = '#'+color;
+
+        function getContrast50(hexcolor){
+            return (parseInt(hexcolor, 16) > 0xffffff/2) ? 'black':'white';
+        }
+
+        function changeWebpage() {
+            var page = document.getElementsByTagName('html')
+            var button = document.getElementsByTagName('button')
+            page[0].style.backgroundColor = getContrast50(color)
+        }
+
+        function newAttempt() {
+            color = prompt('Enter the hex-code for the page...again?','');
+            hexColor = '#'+hexcolor;
+            var tetle = document.getElementsByTagName('h1');
+            var content = document.getElementsByTagName('h2');
+            var botton = document.getElementsByTagName('button');
+            var page = document.getElementsByTagName('html');
+            tetle[0].innerHTML = "JK, you thought!"
+            content[0].innerHTML = "Atleast you can enjoy your text, now colored (insert Owen Wilson 'WOW!' .wav here)!"
+            botton[0].innerHTML = "Try Again?" 
+            tetle[0].style.color, content[0].style.color, botton[0].style.color = hexColor;
+            page[0].style.backgroundColor = getContrast50(color)
+        }
+
+
+
+        changeWebpage();
+
+        console.log(hexColor);
+        console.log(getContrast50(color))
+    </script>
+</body>
+</html>
