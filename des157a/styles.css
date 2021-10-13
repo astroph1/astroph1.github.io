@@ -24,7 +24,6 @@ h2 {
     margin-block-end: 5px;
     font-family: Dalek;
     color: white;
-
 }
 
 ul {
@@ -43,14 +42,9 @@ html {
     max-height: 768px;
     text-align: center;
     animation: smooth-grad 10s linear infinite;
-    background: linear-gradient(90deg, 
-    #f89938 0%, #1a0501 25%,
-    #f89938 50%, #1a0501 75%,
-    #f89938 100%);
+    background: linear-gradient(90deg, #f89938 0%, #1a0501 25%, #f89938 50%, #1a0501 75%, #f89938 100%);
     background-size: 1000% 100%;
-
 }
-
 
 a {
     color: white;
@@ -63,8 +57,8 @@ a:hover {
     color: #282B2C;
     text-decoration: none;
     font-family: Gelio-Bold;
-    font-size: 20px;
-    transition-duration: 1s;
+    font-size: 17px;
+    transition-duration: 0.5s;
 }
 
 main {
@@ -104,7 +98,7 @@ footer {
     margin-bottom: 34px;
     border: 4px solid white;
     border-radius: 5px;
-    box-shadow: black ;
+    box-shadow: black;
     margin-top: 34px;
 }
 
@@ -127,21 +121,25 @@ footer {
     0% {
         background-image: url("Assets/greek.gif");
     }
-
     100% {
         background-image: url("Assets/greek.gif");
     }
 }
 
 @keyframes smooth-grad {
-    0% {background-position-x: 0%;}
-    100% {background-position-x: 100%;}
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
 }
 
 footer {
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
+    flex: 1;
     justify-content: center;
 }
 
