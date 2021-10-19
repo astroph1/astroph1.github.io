@@ -36,11 +36,12 @@ ul {
     font-family: Gelio;
 }
 
-html {
+html,
+body {
     background-color: #F89938;
     max-width: 1366px;
     max-height: 768px;
-    text-align: center;
+    margin: auto;
     animation: smooth-grad 10s linear infinite;
     background: linear-gradient(90deg, #f89938 0%, #1a0501 25%, #f89938 50%, #1a0501 75%, #f89938 100%);
     background-size: 1000% 100%;
