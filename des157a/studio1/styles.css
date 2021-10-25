@@ -25,7 +25,7 @@ body {
 }
 
 overlay {
-    visibility: none;
+    visibility: hidden;
 }
 
 main {
