@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Dalek;
+    src: url("/des157a/Assets/dalek/DALEK___.ttf");
+}
+
+@font-face {
+    font-family: Gelio;
+    src: url("/des157a/Assets/gelio/Gelio\ Pasteli.ttf");
+}
+
+@font-face {
+    font-family: Gelio-Bold;
+    src: url("/des157a/Assets/gelio/Gelio\ Retsina.ttf");
+}
+
+html {
+    max-width: 1366px;
+    max-height: 768px;
+    margin: auto;
+
+}
+
+body {
+    background-image: url("/des157a/Assets/illus-madlibs.png");
+}
+
+overlay {
+    visibility: 0.1;
+}
+
+main {
+    background-image: url("/des157a/Assets/textbox.png");
+    background-repeat: no-repeat;
+    height: 250px;
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    background-clip: none;
+}
+
+form {
+    position: relative;
+    top: 10%;
+    left: 30%;
+}
+
+label {
+    font-family: Dalek;
+}
+
+#word {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: transparent;
+  width: 40%;
+  font-family: Dalek;
+  
+}
+
+#word:focus {
+    outline: none;
+}
+
+#overlay {
+    width: 40%;
+    left: 5%;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-family: Galeo;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: Gelio;
+    font-size: 15px;
+}
+
+a:hover {
+    color: #0f0d07;
+    text-decoration: none;
+    font-family: Gelio-Bold;
+    font-size: 17px;
+    transition-duration: 0.5s;
+}
+
+footer {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    padding: 20px;
+}
+
