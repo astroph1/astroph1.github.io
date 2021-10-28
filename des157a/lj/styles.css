@@ -56,10 +56,6 @@ body h2 {
     margin-top: 25%;
 }
 
-section caption {
-    font-size: 30px;
-}
-
 section a {
     text-decoration: none;
     color: lightgrey;
@@ -79,7 +75,9 @@ body p {
     padding-right: 15%;
 }
 
-#main {
+#row1,
+#row2,
+#row3 {
     display: flex;
     flex: 1;
     flex-direction: row;
