@@ -1,0 +1,166 @@
+html,body {
+    min-width: 1366px;
+    min-height: 768px;
+    background-image: url("/des157a/Assets/mainbg.gif");
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+#alien {
+    width: 112px;
+    height: 238px;
+    background-image: none;
+    position: fixed;
+    top: 48%;
+    left: 66.8%;
+    z-index: 1;
+}
+
+#alien:hover {
+    width: 112px;
+    height: 238px;
+    background-image: url("/des157a/Assets/alien2.png");
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 48%;
+    left: 66.8%;
+    transition-duration: 1s;
+    z-index: 1;
+}
+
+#pillow {
+    width: 244px;
+    height: 52px;
+    position: absolute;
+    background-image: none;
+    top: 74%;
+    left: 31.7%;
+}
+
+#pillow:hover {
+    width: 244px;
+    height: 52px;
+    position: absolute;
+    background-image: url("/des157a/Assets/pillow.png");
+    background-repeat: no-repeat;
+    top: 74%;
+    left: 31.7%;
+    transition-duration: 1s;
+}
+#crystal {
+    width: 140px;
+    height: 215px;
+    position: absolute;
+    background-image: none;
+    top: 52.5%;
+    left: 64.2%;
+}
+
+#crystal:hover {
+    width: 140px;
+    height: 215px;
+    background-image: url("/des157a/Assets/cball.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 52.5%;
+    left: 64.2%;
+    transition-duration: 1s;
+}
+#knob {
+    width: 50px;
+    height: 86px;
+    position: absolute;
+    background-image: none;
+    top: 69.5%;
+    left: 45.7%;
+}
+
+#knob:hover {
+    width: 50px;
+    height: 86px;
+    background-image: url("/des157a/Assets/knob.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 69.5%;
+    left: 45.6%;
+    transition-duration: 1s;
+}
+#spear {
+    width: 1363px;
+    height: 44px;
+    position: absolute;
+    background-image: none;
+    top: 80%;
+}
+
+#spear:hover {
+    width: 1363px;
+    height: 44px;
+    background-image: url("/des157a/Assets/pole.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 80%;
+    transition-duration: 1s;
+}
+#hat {
+    width: 180px;
+    height: 144px;
+    position: absolute;
+    background-image: none;
+    top: 62%;
+    left: 71.5%;
+}
+
+#hat:hover {
+    width: 180px;
+    height: 144px;
+    background-image: url("/des157a/Assets/hat.png");
+    position: absolute;
+    top: 62%;
+    left: 71.5%;
+    transition-duration: 1s;
+}
+#leaf {
+    width: 179px;
+    height: 46px;
+    position: absolute;
+    background-image: none;
+    top: 53%;
+    left: 64.15%;
+}
+
+#leaf:hover {
+    width: 179px;
+    height: 46px;
+    background-image: url("/des157a/Assets/leaf.png");
+    position: absolute;
+    top: 53%;
+    left: 64.15%;
+    transition-duration: 1s;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin: auto;
+}
+
+footer a {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 25px;
+}
+
+footer a:hover {
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 25px;
+    transition-duration: 1s;
+}
