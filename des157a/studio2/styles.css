@@ -1,4 +1,4 @@
-html,body {
+html {
     min-width: 1366px;
     min-height: 768px;
     background-image: url("/des157a/Assets/mainbg.gif");
@@ -6,11 +6,19 @@ html,body {
     margin: auto;
 }
 
+body {
+    position: relative;
+    width: 1366px;
+    height: 768px;
+    overflow: hidden;
+    margin: 0;
+}
+
 #alien {
     width: 112px;
     height: 238px;
     background-image: none;
-    position: fixed;
+    position: absolute;
     top: 48%;
     left: 66.8%;
     z-index: 1;
@@ -21,7 +29,7 @@ html,body {
     height: 238px;
     background-image: url("/des157a/Assets/alien2.png");
     background-repeat: no-repeat;
-    position: fixed;
+    position: absolute;
     top: 48%;
     left: 66.8%;
     transition-duration: 1s;
@@ -50,7 +58,7 @@ html,body {
 #crystal {
     width: 140px;
     height: 215px;
-    position: absolute;
+    position: relative;
     background-image: none;
     top: 52.5%;
     left: 64.2%;
@@ -61,7 +69,7 @@ html,body {
     height: 215px;
     background-image: url("/des157a/Assets/cball.png");
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
     top: 52.5%;
     left: 64.2%;
     transition-duration: 1s;
@@ -90,7 +98,8 @@ html,body {
     height: 44px;
     position: absolute;
     background-image: none;
-    top: 80%;
+    top: 79.6%;
+    left: 0%;
 }
 
 #spear:hover {
@@ -99,7 +108,8 @@ html,body {
     background-image: url("/des157a/Assets/pole.png");
     background-repeat: no-repeat;
     position: absolute;
-    top: 80%;
+    top: 79.6%;
+    left: 0%;
     transition-duration: 1s;
 }
 #hat {
@@ -135,7 +145,7 @@ html,body {
     background-image: url("/des157a/Assets/leaf.png");
     position: absolute;
     top: 53%;
-    left: 64.15%;
+    left: 20%;
     transition-duration: 1s;
 }
 
