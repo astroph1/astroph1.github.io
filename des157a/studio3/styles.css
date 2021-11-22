@@ -1,0 +1,132 @@
+html {
+    width: 1366px;
+    height: 768px;
+    margin: auto;
+}
+
+body {
+    font-family: Arial;
+    color: #333;
+    line-height: 1.5em;
+}
+
+.tug {
+    background-image: url("/des157a/Assets/background.png");
+    background-repeat: no-repeat;
+    height: 768px;
+    animation: fade 2s 1 ease-in-out;
+}
+
+h1 {
+    margin: auto;
+    font-size: 100px;
+    padding: 35px;
+    margin-left: 23%;
+}
+
+#labels ul, #score ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#labels li {
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+#score {
+    padding: 0px;
+}
+
+#score li {
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    margin-top: 10px;
+}
+
+#redteam {
+    margin-left: 775px;
+}
+
+#blueteam {
+    margin-left: 84px;
+}
+
+#redscore {
+    margin-left: 840px;
+}
+
+#bluescore {
+    margin-left: 137px;
+}
+
+#player {
+    height: 768px;
+    width: 1366px;
+    background-image: url("/des157a/Assets/players.png");
+    background-repeat: no-repeat;
+    justify-content: center;
+    z-index: 1;
+    margin-bottom: 0;
+    position: relative;
+    top: -305px;
+    padding: 0;
+}
+
+button { 
+    padding: 10px;
+    font-size: 50px;
+    color: rgb(199, 199, 199);
+    background-color: rgb(75, 75, 75);
+    opacity: 0.5;
+    border-radius: 10px;
+    border-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 2;
+
+}
+
+button:hover { 
+    padding: 10px;
+    font-size: 50px;
+    color: rgb(199, 199, 199);
+    background-color: rgb(75, 75, 75);
+    opacity: 1;
+    border-radius: 10px;
+    border-color: transparent;
+    transition-duration: 200ms;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 2;
+
+}
+
+div {
+    padding: 20px;
+}
+
+#startgame {
+    z-index: 2;
+    margin-top: 318px;
+    margin-left: 453px;
+}
+
+#game {
+    background-color:#eaeaea;
+}
+
+#roll{
+    margin-top: 350px;
+    margin-left: 136px;
+}
+
+#quit {
+    margin-top: 50px;
+    margin-left: 348px;
+}
+
+#roll2 {
+    margin-left: 302px;
+}

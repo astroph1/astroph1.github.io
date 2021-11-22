@@ -49,7 +49,7 @@
     });
 
     function callRevertButton() {
-        bodyTag.innerHTML += "<button id='return'>yo</button>";
+        bodyTag.innerHTML += "<button id='return'>Return</button>";
         document.getElementById("return").addEventListener('click',function(){
             location.reload();
         });
