@@ -17,12 +17,27 @@ body {
     animation: fade 2s 1 ease-in-out;
 }
 
+#instr {
+    padding-bottom: 0px;
+}
+
 h1 {
     margin: auto;
     font-size: 100px;
     padding: 35px;
-    margin-left: 23%;
+    margin-left: 310px;
 }
+
+h3 {
+    margin: 0;
+    margin-left: 491px;
+    padding-top: 25px;
+    font-size: 50px;
+}
+
+#labels {
+    padding-bottom: 5px;
+} 
 
 #labels ul, #score ul {
     display: flex;
@@ -48,19 +63,19 @@ h1 {
 }
 
 #redteam {
-    margin-left: 775px;
-}
-
-#blueteam {
     margin-left: 84px;
 }
 
+#blueteam {
+    margin-left: 775px;
+}
+
 #redscore {
-    margin-left: 840px;
+    margin-left: 137px;
 }
 
 #bluescore {
-    margin-left: 137px;
+    margin-left: 840px;
 }
 
 #player {
@@ -72,7 +87,7 @@ h1 {
     z-index: 1;
     margin-bottom: 0;
     position: relative;
-    top: -305px;
+    top: -265px;
     padding: 0;
 }
 
@@ -125,8 +140,15 @@ div {
 #quit {
     margin-top: 50px;
     margin-left: 348px;
+    font-size: 25px;
 }
 
 #roll2 {
-    margin-left: 302px;
+    margin-left: 343px;
+}
+
+#random {
+ margin-left: 614px;
+ margin-bottom: -82px;
+ margin-top: -144px;
 }

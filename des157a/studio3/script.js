@@ -5,16 +5,21 @@
     const startGame = document.getElementById('startgame');
     const gameControl = document.getElementById('gamecontrol');
     const game = document.getElementById('player');
+    const instrTag = document.getElementById('instr');
+    const tugTag = document.getElementsByTagName('section');
     const score = document.getElementById('score');
+    const bscore = document.getElementById('bluescore');
+    const rscore = document.getElementById('redscore');
+    const gen = document.getElementById('gen');
     const actionArea = document.getElementById('actions');
 
     let gameData = {
-        dice: ['1die.jpg', '2die.jpg', '3die.jpg', '4die.jpg', '5die.jpg', '6die.jpg'],
-        players: ['player 1', 'player 2'],
+        dice: ['rollS.png','roll1.png', 'roll2.png', 'roll3.png', 'roll4.png', 'roll5.png', 'roll6.png'],
+        players: ['Red', 'Blue'],
         score: [0, 0],
-        roll1: 0,
+        roll: 0,
         index: 0,
-        gameEnd: 29,
+        gameEnd: 15,
     }
 
     startGame.addEventListener("click", function() {
@@ -25,10 +30,12 @@
 
         function setUpTurn() {
             //game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`
-            startGame.innerHTML = "";
-            game.innerHTML = '<button id="roll">ROLL</button>'
+            instrTag.innerHTML = `<h3>${gameData.players[gameData.index]} you're up!</h3>`
+            game.style.top = "-179px";
+            game.innerHTML = '<button id="roll">ROLL</button>';
             game.innerHTML += '<button id="quit">QUIT</button>';
-            game.innerHTML += '<button id="roll2">ROLL</button>'
+            game.innerHTML += '<button id="roll2">ROLL</button>';
+            score.innerHTML += '<div id="random"></div>';
             document.getElementById('quit').addEventListener("click", function() {
                 location.reload();
             });
@@ -40,19 +47,21 @@
             })
         }
 
+        const rand = document.getElementById('random');
+
         function throwDice() {
-            gameData.roll1 = Math.floor(Math.random() * 6) + 1;
-            game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
-            game.innerHTML += `<img src="images/${gameData.dice[gameData.roll1-1]}">
-            <img src="images/${gameData.dice[gameData.roll2-1]}">`;
-            if (gameData.rollSum === 2) {
+            gameData.roll = Math.floor(Math.random() * 7) + 1;
+            rand.innerHTML = `<img src="images/${gameData.dice[gameData.roll-1]}" id-"gen">`;
+            game.style.top = "-305px";
+            console.log('yo');
+            if (gameData.roll-1 === 0) {
                 game.innerHTML += "<p>Oh snap, Snake Eyes!</p>";
                 gameData.score[gameData.index] = 0;
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                 setTimeout(setUpTurn, 2000);
-                showCurrentScore();
+                //showCurrentScore();
             }
-            if ((gameData.roll1 === 1 || gameData.roll2 === 1) && !(gameData.roll1 === 1 && gameData.roll2 === 1)) {
+            /* if ((gameData.roll1 === 1 || gameData.roll2 === 1) && !(gameData.roll1 === 1 && gameData.roll2 === 1)) {
                 gameData.score[gameData.index] += 0;
                 checkWinGame();
                 if (checkWinGame()) {
@@ -74,7 +83,7 @@
                     setUpTurn();
                 });
                 checkWinGame();
-            }
+            } */
 
             function checkWinGame() {
                 if (gameData.score[gameData.index] >= gameData.gameEnd) {
