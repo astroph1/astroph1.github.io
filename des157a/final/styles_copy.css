@@ -117,7 +117,7 @@ form::before {
     left: -10px;
     height: 11px;
     border-left: 20px solid rgb(112, 92, 35);
-    border-radius: -107px 14px 15px 0px;
+    border-radius: 0px 14px 15px 0px;
     border-radius: 0px 0px 0px 23px;
 }
 
