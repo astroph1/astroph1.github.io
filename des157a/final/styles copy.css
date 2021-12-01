@@ -1,0 +1,281 @@
+@font-face {
+    font-family: Dalek;
+    src: url("/des157a/Assets/dalek/DALEK___.ttf");
+}
+
+@font-face {
+    font-family: Gelio;
+    src: url("/des157a/Assets/gelio/Gelio\ Pasteli.ttf");
+}
+
+@font-face {
+    font-family: Gelio-Bold;
+    src: url("/des157a/Assets/gelio/Gelio\ Retsina.ttf");
+}
+
+html {
+    max-width: 1366px;
+    max-height: 768px;
+    margin: auto;
+
+}
+
+body { 
+    background-image: url('/des157a/Assets/illus-madlibs.png');
+    background-repeat: no-repeat;
+    width: 1366px;
+    max-height: 768px;
+    position: absolute;
+    margin: auto;
+}
+
+overlay {
+    visibility: hidden;
+}
+
+#form {
+    /* background-image: url("/des157a/Assets/textbox.png"); */
+    background-repeat: no-repeat;
+    max-width: 500px;
+    position: absolute;
+    left: 559px;
+    top: 82px;
+    /* left: 784px;
+    top: 206px; */
+}
+
+.convo {
+  position: relative;
+  margin: .5em auto;
+  padding: 1em;
+  width: 10em; height: auto;
+  border-radius: .25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: #764c29;
+  text-align: center;
+  font-family: Dalek;
+}
+
+.convo::before, .convo::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+}
+
+.convo::after {
+    top: 0; right: 0; bottom: 0; left: 0;
+    border-radius: inherit;
+    transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+    background: #d68524;
+  }
+
+.convo::before{
+  border: solid 0 transparent;
+  border-right: solid 3.5em #d68524;
+  border-bottom: solid .25em #764c29;
+  bottom: .25em; left: 1.25em;
+  width: 0; height: 1em;
+  transform: rotate(45deg) skewX(75deg);
+}
+
+#conver {
+    margin-bottom: 5px;
+}
+
+#next {
+    border-width: 0px;
+    background-color: transparent;
+    position: relative;
+    left: 50%;
+    font-family: Dalek;
+}
+
+#next:hover {
+    border-width: 0px;
+    background-color: transparent;
+    color: lightgrey;
+    position: relative;
+    left: 50%;
+    font-family: Dalek;
+}
+
+form {
+    background-color: rgb(112, 92, 35);
+    opacity: 0.9;
+    border-radius: 10px;
+    position: absolute;
+    width: 310px;
+    padding: 15px;
+    border-radius: 16px 14px 15px 0px;
+}
+
+form::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 87%;
+    left: -10px;
+    height: 11px;
+    border-left: 20px solid rgb(112, 92, 35);
+    border-radius: -107px 14px 15px 0px;
+    border-radius: 0px 0px 0px 23px;
+}
+
+
+
+label {
+    font-family: Dalek;
+    font-size: 20px;
+    color: rgb(206, 206, 206);
+    padding-bottom: 10px;
+}
+
+input[type=submit] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    padding: 10px;
+    color: transparent;
+    background-color: transparent;
+    border-color: orange;
+    margin-top: 6px;
+    margin-left: 3px;
+    border-width: 3px;
+}
+
+input[type=text] {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 60%;
+  font-family: Dalek;
+  font-size: 17px;
+  
+}
+
+#word:focus {
+    outline: none;
+}
+
+#overlay {
+    width: 600px;
+    padding: 30px;
+    margin-bottom: 768px;
+    margin-top: 20px;
+    margin-left: 400px;
+    color: rgb(14, 14, 14);
+    font-size: 20px;
+    text-align: justify;
+    justify-content: center;
+    background-color: rgba(207, 171, 117, 0.9);
+    font-family: Gelio;
+}
+
+#close {
+    border-radius: 0px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#replay, #quit {
+    border-width: 0px;
+    background-color: transparent;
+    position: relative;
+    font-family: Dalek;
+}
+
+#replay:hover{
+    border-width: 0px;
+    background-color: transparent;
+    color: rgb(28, 104, 32);
+    position: relative;
+    font-family: Dalek;
+}
+
+#quit:hover {
+    border-width: 0px;
+    background-color: transparent;
+    color: rgb(165, 46, 46);
+    position: relative;
+    font-family: Dalek;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: Gelio;
+    font-size: 15px;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+    font-family: Gelio;
+    font-size: 15px;
+    transition-duration: 0.5s;
+}
+
+footer {
+    position: absolute;
+    top: 512px;
+    left: 547px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 15px;
+}
+
+#preloader{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: radial-gradient(circle, rgb(224, 133, 28) 0%, rgb(105, 66, 7) 100%);
+	color: rgb(189, 189, 189);
+	font-size: 3em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.fadeout {
+	animation-name: fadeout;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+	0%{
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#preloader h3 {
+    font-family: Gelio-Bold;
+}
+
+#instr {
+    font-family: Gelio;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
+
