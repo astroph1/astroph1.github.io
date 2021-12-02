@@ -54,6 +54,7 @@ overlay {
   background: #764c29;
   text-align: center;
   font-family: Dalek;
+  animation: fadein 1s forwards;
 }
 
 .convo::before, .convo::after {
@@ -80,6 +81,16 @@ overlay {
 
 #conver {
     margin-bottom: 5px;
+}
+
+@keyframes fadein {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
 }
 
 #next {
