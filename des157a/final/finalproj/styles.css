@@ -128,7 +128,7 @@ form::before {
 }
 
 #myform {
-    animation: pop-up 2s forwards;
+    animation: pop-in 2s forwards;
 }
 
 label {
@@ -139,16 +139,18 @@ label {
 }
 
 input[type=submit] {
-    width: 15px;
-    height: 15px;
+    width: 50px;
+    height:30px;
     border-radius: 50px;
-    padding: 10px;
-    color: transparent;
-    background-color: transparent;
+    color: white;
+    background-color: rgb(66, 58, 43);
     border-color: orange;
-    margin-top: 6px;
-    margin-left: 3px;
-    border-width: 3px;
+    margin-left: 10px;
+    font-family: Gelio;
+}
+
+input[type=submit]:focus {
+    background-color: rgb(21, 46, 31);
 }
 
 input[type=text] {
@@ -170,26 +172,32 @@ input[type=text] {
 }
 
 #overlay {
-    width: 600px;
+    width: 550px;
     padding: 30px;
     margin-bottom: 768px;
     margin-top: 20px;
     margin-left: 400px;
     color: rgb(14, 14, 14);
-    font-size: 20px;
-    text-align: justify;
+    font-size: 25px;
     justify-content: center;
     background-color: rgba(207, 171, 117, 0.9);
     font-family: Gelio;
     z-index: 1;
+    border-radius: 15px;
 }
 
 #close {
     border-radius: 0px;
     background-color: transparent;
-    border-color: transparent;
-    font-size: 30px;
+    border-radius: 25px;
+    border-color: black;
+    font-size: 25px;
     margin-bottom: 5px;
+    margin-left: 90%;
+}
+
+#close:focus {
+    background-color: rgba(175, 144, 97, 0.9);
 }
 
 #replay, #quit {
@@ -255,7 +263,7 @@ footer p {
 	top: 0;
 	left: 0;
 	background: radial-gradient(circle, rgb(224, 133, 28) 0%, rgb(105, 66, 7) 100%);
-	color: rgb(189, 189, 189);
+	color: rgb(218, 218, 218);
 	font-size: 3em;
 	text-align: center;
 	display: flex;
@@ -263,6 +271,46 @@ footer p {
 	justify-content: space-around;
 }
 
+#preloader p {
+    color: rgb(24, 24, 24);
+    font-family: Dalek;
+    font-size: 30px;
+    text-align: justify;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#preloader #load {
+    color: rgb(24, 24, 24);
+    font-family: Dalek;
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 0;
+}
+
+#lb-bg {
+    width: 80%;
+    height: 15px;
+    background-color: rgb(39, 39, 39);
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 25px;
+}
+
+#myBar {
+    background-color: rgb(224, 133, 28);
+    height: 5px;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    top: 50%;
+    font-family: Gelio;
+    animation: loadbar 9s forwards;
+}
 .fadeout {
 	animation-name: fadeout;
 	animation-duration: 2s;
@@ -278,14 +326,39 @@ footer p {
 	}
 }
 
+@keyframes loadbar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 99.1%;
+    }
+}
+
 #preloader h3 {
     font-family: Gelio-Bold;
+    margin-top: 5px;
+}
+
+#preloader #titel {
+    font-family: Gelio-Bold;
+    margin-top: 55px;
+    margin-bottom: 5px;
 }
 
 #instr {
     font-family: Gelio;
-    width: 60%;
+    color: rgb(24, 24, 24);
+    font-size: 30px;
+    width: auto;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#instr li
+{
+    margin-left: 5px;
 }
 
